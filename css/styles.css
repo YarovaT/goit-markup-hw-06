@@ -680,6 +680,79 @@ a {
   margin-right: 0;
 }
 
+/* Форма подписки */
+
+.subscription-form {
+  margin-left: 93px;
+}
+
+.email-form {
+  display: flex;
+  max-width: 570px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.email-form label {
+  font-weight: var(--secondary-font-weight);
+  text-transform: uppercase;
+
+  color: var(--primary-background-color);
+
+  cursor: pointer;
+}
+
+.email-form input {
+  margin-top: 20px;
+  padding-left: 16px;
+
+  width: 358px;
+  height: 50px;
+
+  background-color: var(--accent-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.email-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-input {
+  min-width: 200px;
+  min-height: 50px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 4px;
+
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-send {
+  margin-left: 10px;
+
+  fill: currentColor;
+}
+
 /* Модальное окно */
 
 .backdrop {
