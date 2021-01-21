@@ -393,7 +393,7 @@
     <!--Подвал сайта-->
     <footer class="footer-page">
       <div class="container flex">
-        <div>
+        <div class="info-footer">
           <a href="./index.html" class="logo"
             ><span class="logo-start">Web</span
             ><span class="logo-end-footer">Studio</span></a
@@ -410,6 +410,9 @@
             </a>
           </address>
         </div>
+
+        <!-- Присоединяйтесь -->
+
         <div class="social-links">
           <p class="text">присоединяйтесь</p>
           <ul class="list flex">
@@ -443,6 +446,7 @@
             </li>
           </ul>
         </div>
+
         <!-- Форма подписки -->
 
         <div class="subscription-form">
@@ -482,7 +486,7 @@
           <div class="form-field">
             <label for="name" class="form-label">Имя</label>
             <div class="form-input">
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" placeholder=" " />
               <svg class="icon-modal" width="18" height="18">
                 <use href="./images/sprite.svg#person-input"></use>
               </svg>
@@ -492,7 +496,7 @@
           <div class="form-field">
             <label for="tel" class="form-label">Телефон</label>
             <div class="form-input">
-              <input type="tel" name="tel" id="tel" />
+              <input type="tel" name="tel" id="tel" placeholder=" " />
               <svg class="icon-modal" width="18" height="18">
                 <use href="./images/sprite.svg#phone-input"></use>
               </svg>
@@ -502,7 +506,7 @@
           <div class="form-field">
             <label for="mail" class="form-label">Почта</label>
             <div class="form-input">
-              <input type="email" name="mail" id="mail" />
+              <input type="email" name="mail" id="mail" placeholder=" " />
               <svg class="icon-modal" width="18" height="18">
                 <use href="./images/sprite.svg#email-input"></use>
               </svg>
@@ -510,21 +514,18 @@
           </div>
 
           <div class="form-field">
-            <label class="form-label">Комментарий</label>
+            <label for="comment" class="form-label">Комментарий</label>
             <textarea
               name="comment"
               rows="8"
               placeholder="Введите текст"
+              id="comment"
+              class="comment"
             ></textarea>
           </div>
 
           <label class="form-field check">
-            <input
-              class="checkbox"
-              type="checkbox"
-              name="agreement"
-              id="agreement"
-            />
+            <input class="checkbox" type="checkbox" name="agreement" />
             <span class="icon-input"></span>
 
             <span class="checkbox-label"

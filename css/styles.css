@@ -611,9 +611,14 @@ a {
 /* Подвал сайта */
 
 .footer-page {
-  padding: 60px 0px;
+  padding-bottom: 60px;
 
   background: var(--accent-background-color);
+}
+
+.info-footer {
+  margin: 0;
+  margin-top: 43px;
 }
 
 .address {
@@ -630,11 +635,18 @@ a {
   padding-bottom: 9px;
 }
 
+.address-link:nth-last-child(n) {
+  padding-bottom: 0;
+}
+
 .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Присоединяйтесь */
+
 .social-links {
+  margin-top: 55px;
   margin-left: 70px;
 }
 
@@ -683,6 +695,7 @@ a {
 /* Форма подписки */
 
 .subscription-form {
+  margin-top: 55px;
   margin-left: 93px;
 }
 
@@ -714,6 +727,8 @@ a {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  outline: none;
 }
 
 .email-input::placeholder {
@@ -745,6 +760,9 @@ a {
   cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  text-decoration: none;
+  outline: none;
 }
 
 .icon-send {
@@ -832,6 +850,8 @@ textarea {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  outline: none;
 }
 
 .modal-title {
@@ -862,6 +882,8 @@ textarea {
   line-height: 1.17px;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
+
+  outline: none;
 }
 
 .form-field > textarea::placeholder {
@@ -880,6 +902,8 @@ textarea {
   margin-bottom: 28px;
 
   color: var(--primary-text-color);
+
+  outline: none;
 }
 
 .form-input input {
@@ -892,6 +916,10 @@ textarea {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  outline: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-modal {
@@ -906,11 +934,23 @@ textarea {
   fill: currentColor;
 
   transform: translateY(-50%);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus-within > input {
+  color: var(--accent-color);
+
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .form-input:focus-within > .icon-modal {
   color: var(--accent-color);
+}
+
+.comment:focus-within {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .checkbox-label {
@@ -952,6 +992,9 @@ textarea {
   border-radius: 4px;
 
   cursor: pointer;
+
+  text-decoration: none;
+  outline: none;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
