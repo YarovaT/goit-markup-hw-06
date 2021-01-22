@@ -696,7 +696,7 @@ a {
 
 .subscription-form {
   margin-top: 55px;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .email-form {
@@ -732,6 +732,14 @@ a {
 }
 
 .email-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email-input:not(:placeholder-shown) {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -839,6 +847,12 @@ a {
 .close-icon {
   fill: currentColor;
 }
+
+.close-buttton:hover,
+.close-buttton:focus {
+  color: var(--accent-color);
+}
+
 /* Форма Заявки */
 
 textarea {
